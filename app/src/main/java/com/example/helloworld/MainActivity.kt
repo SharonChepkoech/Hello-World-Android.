@@ -11,12 +11,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         btnBmi = findViewById(R.id.btnBmi)
         btnBmi.setOnClickListener {
             val intent = Intent(this, CalculateBmiActivity::class.java)
             startActivity(intent)
         }
-        setContentView(R.layout.activity_main)
+
         btnSendMoney = findViewById(R.id.btnSendMoney)
         btnSendMoney.setOnClickListener {
             val intent = Intent(this, SendMoney::class.java)
